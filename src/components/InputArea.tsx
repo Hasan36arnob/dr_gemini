@@ -139,6 +139,26 @@ export const InputArea: React.FC<InputAreaProps> = ({ onSendMessage, isLoading }
           from { transform: rotate(0deg); }
           to { transform: rotate(360deg); }
         }
+        @media (max-width: 768px) {
+          .input-container {
+            padding: 1rem;
+          }
+          .input-form {
+            gap: 0.75rem;
+          }
+          .medical-textarea {
+            padding: 0.75rem 1rem;
+            font-size: 0.95rem;
+          }
+          .send-button {
+            width: 3rem;
+            height: 3rem;
+          }
+          .disclaimer {
+            font-size: 0.7rem;
+            margin-top: 0.75rem;
+          }
+        }
       `}</style>
     </div>
   );

@@ -128,6 +128,20 @@ export const ChatContainer: React.FC<ChatContainerProps> = ({ messages, isLoadin
           0%, 80%, 100% { transform: scale(0); opacity: 0.3; }
           40% { transform: scale(1); opacity: 1; }
         }
+        @media (max-width: 768px) {
+          .chat-container {
+            padding: 1rem;
+          }
+          .empty-state-icon {
+            font-size: 3rem;
+          }
+          .empty-state-title {
+            font-size: 1.25rem;
+          }
+          .empty-state-subtitle {
+            font-size: 0.9rem;
+          }
+        }
       `}</style>
     </div>
   );

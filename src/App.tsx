@@ -101,7 +101,7 @@ function App() {
         .bg-pattern {
           position: absolute;
           top: 0; left: 0; right: 0; bottom: 0;
-          background: radial-gradient(circle at top right, var(--primary-light) 0%, transparent 40%),
+          background: radial-gradient(circle at top right, rgba(13, 148, 136, 0.15) 0%, transparent 50%),
                       radial-gradient(circle at bottom left, rgba(14, 165, 233, 0.1) 0%, transparent 40%);
           z-index: 0;
           pointer-events: none;
@@ -118,15 +118,15 @@ function App() {
           box-shadow: var(--shadow-2xl);
         }
         .error-banner {
-          background-color: #fee2e2;
-          color: #b91c1c;
+          background-color: #7f1d1d;
+          color: #fecaca;
           padding: 0.75rem 1rem;
           display: flex;
           align-items: center;
           gap: 0.5rem;
           font-size: 0.875rem;
           font-weight: 500;
-          border-bottom: 1px solid #fca5a5;
+          border-bottom: 1px solid #991b1b;
         }
         @media (min-width: 1200px) {
           .main-content {
@@ -134,14 +134,23 @@ function App() {
             border-right: 1px solid var(--border-color);
           }
         }
-        @media (prefers-color-scheme: dark) {
+        @media (prefers-color-scheme: light) {
           .bg-pattern {
-            background: radial-gradient(circle at top right, rgba(13, 148, 136, 0.15) 0%, transparent 50%);
+            background: radial-gradient(circle at top right, var(--primary-light) 0%, transparent 40%),
+                        radial-gradient(circle at bottom left, rgba(14, 165, 233, 0.1) 0%, transparent 40%);
           }
           .error-banner {
-            background-color: #7f1d1d;
-            color: #fecaca;
-            border-bottom-color: #991b1b;
+            background-color: #fee2e2;
+            color: #b91c1c;
+            border-bottom-color: #fca5a5;
+          }
+        }
+        @media (max-width: 768px) {
+          .main-content {
+            max-width: 100%;
+          }
+          .bg-pattern {
+            opacity: 0.5;
           }
         }
       `}</style>

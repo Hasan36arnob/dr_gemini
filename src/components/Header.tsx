@@ -84,6 +84,30 @@ export const Header: React.FC<HeaderProps> = ({ onClearChat }) => {
           color: var(--text-main);
           border-color: var(--text-muted);
         }
+        @media (max-width: 480px) {
+          .header {
+            padding: 0.75rem 1rem;
+          }
+          .header-brand {
+            gap: 0.75rem;
+          }
+          .icon-container {
+            padding: 0.375rem;
+          }
+          .title {
+            font-size: 1.1rem;
+          }
+          .status {
+            font-size: 0.7rem;
+          }
+          .clear-button {
+            padding: 0.375rem 0.75rem;
+            font-size: 0.8rem;
+          }
+          .clear-button span {
+            display: none;
+          }
+        }
       `}</style>
     </header>
   );
