@@ -13,10 +13,10 @@ export const Header: React.FC<HeaderProps> = ({ onClearChat }) => {
           <Stethoscope size={24} color="var(--primary)" />
         </div>
         <div>
-          <h1 className="title">Dr. Gemini</h1>
+          <h1 className="title">Dr. Rahman</h1>
           <div className="status">
             <Activity size={12} className="status-icon" color="#10b981" />
-            <span>World's Top Medical AI</span>
+            <span>Muslim Doctor & Medical AI</span>
           </div>
         </div>
       </div>

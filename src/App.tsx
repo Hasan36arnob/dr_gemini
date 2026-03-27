@@ -50,7 +50,7 @@ function App() {
       setMessages(prev => [...prev, aiMessage]);
     } catch (err: any) {
       console.error('Error calling Gemini API:', err);
-      setError(err.message || 'Failed to connect to Dr. Gemini. Please check your connection and API key.');
+      setError(err.message || 'Failed to connect to Dr. Rahman. Please check your connection and API key.');
       
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),

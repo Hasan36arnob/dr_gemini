@@ -60,7 +60,7 @@ export const InputArea: React.FC<InputAreaProps> = ({ onSendMessage, isLoading }
       </form>
 
       <div className="disclaimer">
-        ⚠️ AI Dr. Gemini provides general information and does not replace professional medical advice, diagnosis, or treatment. Wait, please always consult your physician for medical emergencies.
+        ⚠️ Dr. Rahman provides general information and does not replace professional medical advice, diagnosis, or treatment. Please always consult your physician for medical emergencies. Remember, true healing is from Allah (Ash-Shafi).
       </div>
 
       <style>{`

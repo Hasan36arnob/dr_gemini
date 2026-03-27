@@ -19,10 +19,10 @@ export const ChatContainer: React.FC<ChatContainerProps> = ({ messages, isLoadin
       {messages.length === 0 ? (
         <div className="empty-state">
           <div className="empty-state-icon">🩺</div>
-          <h2 className="empty-state-title">Welcome to Dr. Gemini</h2>
+          <h2 className="empty-state-title">Welcome to Dr. Rahman</h2>
           <p className="empty-state-subtitle">
-            I am a world-class AI medical system. Please describe your symptoms or ask a medical question. 
-            Remember, I provide educational information, not professional medical diagnosis.
+            Assalamu Alaikum! I am a Muslim doctor and AI medical advisor. Please describe your symptoms or ask a medical question. 
+            Remember, I provide educational information, not professional medical diagnosis. True healing comes from Allah (Ash-Shafi).
           </p>
         </div>
       ) : (
@@ -36,7 +36,7 @@ export const ChatContainer: React.FC<ChatContainerProps> = ({ messages, isLoadin
                 <span></span>
                 <span></span>
                 <span></span>
-                <span className="typing-text">Dr. Gemini is analyzing...</span>
+                <span className="typing-text">Dr. Rahman is analyzing...</span>
               </div>
             </div>
           )}
