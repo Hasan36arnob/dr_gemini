@@ -2,7 +2,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 
 // Initialize the API with the key from our local .env
 const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
-
+//[GCP_API_KEY]
 if (!apiKey) {
   console.warn("VITE_GEMINI_API_KEY is not set in the environment variables.");
 }
@@ -30,11 +30,11 @@ CRITICAL INSTRUCTIONS:
 `;
 
 export const getGeminiChatSession = () => {
-  const model = genAI.getGenerativeModel({ 
+  const model = genAI.getGenerativeModel({
     model: "gemini-2.5-flash",
-    systemInstruction: SYSTEM_PROMPT 
+    systemInstruction: SYSTEM_PROMPT
   });
-  
+
   // Create a chat session to maintain history
   return model.startChat({
     history: [],
